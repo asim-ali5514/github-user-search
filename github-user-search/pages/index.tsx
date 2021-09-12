@@ -3,20 +3,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'tailwindcss/tailwind.css'
-import { useState, useEffect } from 'react'
+import Navbar from '../components/Navbar'
+import { motion } from "framer-motion"
+import search from '../public/icon-search.svg'
 const Home: NextPage = () => {
-  const [theme , setTheme ] = useState("dark")
-  const colorTheme = theme ===  'dark' ? 'light' : 'dark'
-  useEffect(() => {
-      const root = window.document.documentElement
-      root.classList.remove(colorTheme)
-      root.classList.add(theme)
-  },[theme , colorTheme])
   return (
-    <div>
-      <button onClick={() => setTheme(colorTheme)}>Dark</button>
-      <h1 className="text-red-700 dark:text-blue-900">hello</h1>
+  <div className="bg-snow flex h-screen flex-col  dark:bg-dark-mode-bg transition duration-75">
+    <Navbar/>
+    <div className="flex flex-row items-center px-3 mx-auto gap-2 h-16 rounded-2xl bg-dark-blue w-full max-w-mob-search">
+      <Image src={search} alt="search icon"/>
+      <input type="text" className="bg-transparent text-sm font-Space-Mono w-full" placeholder="Search GitHub username..." />
+      <button className="h-11 bg-sky-blue w-20 font-Space-Mono text-white px-2 rounded-xl font-medium">Search</button>
     </div>
+  </div>
   )
 }
 

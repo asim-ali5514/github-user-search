@@ -10,13 +10,30 @@ module.exports = {
         'dark-grey' : '#2B3442',
         'snow' : '#F6F8FF',
         'slight-dark-white' : '#FEFEFE',
-        'light-black' : '#F6F8FF',
+        'dark-mode-bg' : 'hsl(220, 40%, 13%)',
         'dark-blue' : '#1E2A47'
+      },
+      fontFamily : {
+        'Space-Mono' : ['"Space Mono"' , 'monospace'],
+      },
+      fontSize : {
+        'mobile-title' : '26px',
+      },
+      spacing : {
+        'mob-search' : '327px'
+      },
+      maxWidth : {
+        'mob-search' : '327px'
+
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display : ['dark'],
+      fill : ['hover' , 'focus'],
+      cursor : ['hover' , 'focus']
+    },
   },
   plugins: [],
 }
