@@ -20,11 +20,14 @@ module.exports = {
         'mobile-title' : '26px',
       },
       spacing : {
-        'mob-search' : '327px'
+        'mob-search' : '327px',
+        'mob-profile' : '75px'
       },
       maxWidth : {
         'mob-search' : '327px'
-
+      },
+      height : {
+        'mob-container' : '517px'
       }
     },
   },
