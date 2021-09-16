@@ -11,7 +11,8 @@ module.exports = {
         'snow' : '#F6F8FF',
         'slight-dark-white' : '#FEFEFE',
         'dark-mode-bg' : 'hsl(220, 40%, 13%)',
-        'dark-blue' : '#1E2A47'
+        'dark-blue' : '#1E2A47',
+        'dark-white' : '#F6F8FF',
       },
       fontFamily : {
         'Space-Mono' : ['"Space Mono"' , 'monospace'],
