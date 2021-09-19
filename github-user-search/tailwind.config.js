@@ -3,6 +3,10 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      screens : {
+        'md' : '425px',
+        'lg' : '768px'
+      },
       colors : {
         'sky-blue' : '#0079FF',
         'light-grey' : '#697C9A',
@@ -22,10 +26,12 @@ module.exports = {
       },
       spacing : {
         'mob-search' : '327px',
-        'mob-profile' : '75px'
+        'mob-profile' : '75px',
+        'tablet-profile' : '117px'
       },
       maxWidth : {
-        'mob-search' : '327px'
+        'mob-search' : '327px',
+        'md-width' : '573px'
       },
       height : {
         'mob-container' : '517px'
