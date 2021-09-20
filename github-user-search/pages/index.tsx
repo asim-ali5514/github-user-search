@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <motion.img initial={{y : -50 , opacity : 0}} animate={{y : 0 , opacity : 1 }} transition={{duration : 0.6}} src={Info.avatar_url} className="w-mob-profile h-mob-profile rounded-full md:w-tablet-profile md:h-tablet-profile" alt="profic picture" />
         <div className="flex flex-col gap-1  lg:grid lg:grid-cols-2">
           <motion.h2 initial={{y : -80 , opacity : 0}} animate={{y : 0 , opacity : 1}} transition={{ duration : 0.7}} className="font-Space-Mono font-bold text-base dark:text-white md:text-2xl">{Info.name}</motion.h2>
-          <a href={Info.html_url} target="_blank" >
+          <a href={Info.html_url} >
             <motion.h3 initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} transition={{ duration : 0.9}}  className="font-Space-Mono lg:hidden text-sky-blue md:text-base">{'@' + Info.login}</motion.h3>
           </a>
           <motion.h3 initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} transition={{ duration : 0.9}}  className="font-Space-Mono hidden lg:flex text-sky-blue md:text-base">{'@' + Info.login}</motion.h3>
